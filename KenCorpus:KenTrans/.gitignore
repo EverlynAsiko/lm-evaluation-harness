@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+
+# Editors/OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Notebooks outputs / checkpoints
+*.ipynb_checkpoints/
+checkpoints/
+outputs/
+logs/
+wandb/
+
+# Data (don’t commit datasets)
+data/
+datasets/
+*.jsonl.gz
+*.parquet
+*.tar
+*.zip
+
+# Model weights (use HF or LFS, not the repo)
+*.bin
+*.pt
+*.safetensors
+
+# LM-Eval artifacts
+results/
+cache/
