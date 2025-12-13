@@ -1,0 +1,15 @@
+
+task: afrihate_amharic_hate
+dataset_path: afrihate/afrihate
+dataset_name: amh
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+doc_to_text: "Tweet: {{text}}\nQuestion: Is this tweet abusive, hateful, or normal?\nAnswer:"
+doc_to_target: label
+doc_to_choice: ["abusive", "hate", "normal"]
+should_decontaminate: true
+doc_to_decontamination_query: text
+metric_list:
+  - metric: acc
+  - metric: f1_macro
